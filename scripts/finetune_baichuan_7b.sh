@@ -1,7 +1,7 @@
 python3 main.py \
     --model_name_or_path /home/robin/demo/baichuan/baichuan-7B \
     --trust_remote_code True\
-    --output_dir ./output/guanaco-7b \
+    --output_dir ./output/BaichuanChat-7b \
     --logging_steps 10 \
     --save_strategy steps \
     --data_seed 42 \
