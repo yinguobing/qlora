@@ -37,6 +37,7 @@ def make_trainer(args, training_args):
         if "llama" in args.model_name_or_path
         else None,  # Needed for HF name change
         use_auth_token=args.use_auth_token,
+        trust_remote_code=True,
     )
     if tokenizer._pad_token is None:
         smart_tokenizer_and_embedding_resize(
